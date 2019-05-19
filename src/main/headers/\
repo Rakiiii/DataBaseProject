@@ -1,0 +1,16 @@
+#ifndef DATABASE_CUSTOMEEDITTEXT_HPP
+
+#define DATABASE_CUSTOMEEDITTEXT_HPP
+
+#include "/usr/include/ConsoleComponentsLib/editText.hpp"
+
+class CustomEditText : public EditText
+{
+	public:
+		CustomEditText(int,int,View*,std::string);
+		CustomEditText(CustomEditText&) = delete;
+		~CustomEditText();
+		virtual void event(char ev);	
+};
+
+#endif
